@@ -1,3 +1,4 @@
+import com.sun.org.apache.regexp.internal.RE;
 import org.junit.Assert;
 import org.junit.Test;
 import org.omg.CORBA.DoubleHolder;
@@ -6,7 +7,7 @@ import org.omg.CORBA.DoubleHolder;
  * Created by damian on 02/09/16.
  */
 public class ParesOrdenadosTest {
-    /*
+
     @Test
     public void crearParOrdenado(){
         //Tipar la Clase Par
@@ -35,15 +36,27 @@ public class ParesOrdenadosTest {
     public void elPrimero2(){
         //Tipar las siguientes variables:
 
-        Par par = new Par("casa",2d);
+        Par<String, Double> par = new Par("casa",2d);
         Cuadrado c = new Cuadrado(1);
         Rectangulo r = new Rectangulo(2,3);
-        Par par2 = new Par(c,r);
+        Par <Cuadrado, Rectangulo> par2 = new Par(c,r);
 
-        Par parGroso = new Par(par,par2);
+        Par<Par<String, Double>, Par <Cuadrado, Rectangulo>> parGroso = new Par(par,par2);
 
-        //acceder a la base del rectangulo que esta dentro de la variable parGroso
-        Assert.assertEquals(parGroso , r.area(),0);
+        //acceder al area del rectangulo que esta dentro de la variable parGroso
+        Assert.assertEquals(parGroso.second().second().area() , r.area(),0);
 
-    }*/
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
