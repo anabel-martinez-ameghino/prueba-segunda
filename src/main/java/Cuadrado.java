@@ -10,4 +10,23 @@ public class Cuadrado {
         this.lado = i;
     }
 
+    public int area() {
+        int areaC = lado * lado;
+        return areaC;
+    }
+
+    public int perimetro() {
+        int perimetroC = lado * 4;
+        return perimetroC;
+    }
+
+    public double sumarAreasDeCuadrados(List<Cuadrado> cuadrados) {
+        int suma = 0;
+        for (Cuadrado c : cuadrados) {
+            suma = suma + c.area();
+        }
+        return suma;
+    }
+
 }
+

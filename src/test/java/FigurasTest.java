@@ -1,12 +1,7 @@
-import org.junit.Assert;
-import org.junit.Test;
-
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Created by damian on 26/08/16.
  */
+/*
 public class FigurasTest{
 
     @Test
@@ -37,3 +32,4 @@ public class FigurasTest{
         Assert.assertEquals(1331, cuadrado.sumarAreasDeFiguras(figuras),10);
     }
 }
+*/
