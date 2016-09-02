@@ -1,7 +1,6 @@
-import Circulo.Circulo;
+
 import org.junit.Assert;
 import org.junit.Test;
-
 
 
 
@@ -25,3 +24,4 @@ public class CirculoTest {
         Assert.assertEquals((Math.PI*10) , circulo.perimetro(),0);
     }
 }
+
